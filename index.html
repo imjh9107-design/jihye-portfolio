@@ -1,63 +1,137 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>임지혜 - HR Data Analyst</title>
-    <meta name="description" content="데이터로 HR을 분석하고 발전시키고 싶은 임지혜의 포트폴리오입니다.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>임지혜 | HR Data Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Pretendard', sans-serif;
+      background: linear-gradient(135deg, #eef2f7, #e6ecf5);
+      color: #222;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    .subtitle {
+      color: #555;
+      font-size: 18px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      background: #6c7cff;
+      color: white;
+      border-radius: 999px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+
+    .grid {
+      display: flex;
+      gap: 16px;
+    }
+
+    .grid div {
+      flex: 1;
+      background: #f8f9fb;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+  </style>
 </head>
+
 <body>
-    <!-- Canvas for dynamic background -->
-    <canvas id="bg-canvas"></canvas>
 
-    <div class="overlay"></div>
+<main>
 
-    <main>
-        <section id="hero" class="glass-panel slide-up">
-            <div class="hero-content">
-                <span class="badge">HR Data Analyst</span>
-                <h1>임지혜</h1>
-                <p class="subtitle">데이터로 사람과 조직을 이해하고 발전시킵니다</p>
-            </div>
-        </section>
+  <!-- 메인 -->
+  <section class="card">
+    <span class="badge">HR Data Analyst</span>
+    <h1>임지혜</h1>
+    <p class="subtitle">데이터로 사람과 조직을 이해하고, 더 나은 방향을 고민합니다.</p>
+  </section>
 
-        <section id="about" class="glass-panel slide-up reveal delay-1">
-            <h2><span class="icon">👤</span> About Me</h2>
-            <div class="content-text">
-                <p>안녕하세요. <strong>데이터로 HR을 분석하고 발전시키고 싶은 임지혜</strong>입니다.</p>
-                <p>실무 경험을 바탕으로 사람과 조직을 이해하고, 데이터를 통해 더 나은 방향을 제안하는 일에 관심이 많습니다.</p>
-            </div>
-        </section>
+  <!-- About -->
+  <section class="card">
+    <h2>👤 About Me</h2>
+    <p>
+      안녕하세요. 데이터로 HR을 분석하고 발전시키고 싶은 임지혜입니다.
+    </p>
+    <p>
+      7년간 급여 및 인사 실무를 수행하며 다양한 데이터를 다뤄왔지만,
+      단순 계산을 넘어 데이터를 기반으로 문제를 해결하고 싶다는 고민을 하게 되었습니다.
+    </p>
+    <p>
+      현재는 데이터 분석을 통해 HR을 더 효율적이고 체계적으로 개선하는 방향에 관심을 가지고 있습니다.
+    </p>
+  </section>
 
-        <section id="personality" class="glass-panel slide-up reveal delay-2">
-            <h2><span class="icon">🧠</span> Personality</h2>
-            <div class="content-text">
-                <div class="badge-large">ISTP</div>
-                <p>차분하고 현실적인 시각으로 문제를 바라보고, 복잡한 상황도 하나씩 정리하며 해결해가는 편입니다.</p>
-            </div>
-        </section>
+  <!-- 강점 -->
+  <section class="card">
+    <h2>💡 Strength</h2>
+    <div class="grid">
+      <div>
+        <h3>실무 경험</h3>
+        <p>급여, 4대보험, 퇴직연금 등 HR 전반 경험</p>
+      </div>
+      <div>
+        <h3>문제 해결</h3>
+        <p>오류를 줄이고 프로세스를 개선하는 데 집중</p>
+      </div>
+      <div>
+        <h3>데이터 관심</h3>
+        <p>숫자 기반 의사결정에 흥미</p>
+      </div>
+    </div>
+  </section>
 
-        <section id="interests" class="glass-panel slide-up reveal delay-3">
-            <h2><span class="icon">✨</span> Interests</h2>
-            <div class="cards">
-                <div class="card">
-                    <div class="card-icon">🏋️‍♀️</div>
-                    <h3>운동</h3>
-                </div>
-                <div class="card">
-                    <div class="card-icon">📊</div>
-                    <h3>데이터분석</h3>
-                </div>
-                <div class="card">
-                    <div class="card-icon">👶</div>
-                    <h3>육아</h3>
-                </div>
-            </div>
-        </section>
-    </main>
+  <!-- 관심분야 -->
+  <section class="card">
+    <h2>✨ Interests</h2>
+    <div class="grid">
+      <div>🏋️‍♀️ 운동</div>
+      <div>📊 데이터분석</div>
+      <div>👶 육아</div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- 목표 -->
+  <section class="card">
+    <h2>🎯 Goal</h2>
+    <p>
+      단순한 HR 운영을 넘어 데이터 기반으로 조직을 이해하고,
+      개선 방향을 제시할 수 있는 HR Data Analyst로 성장하는 것이 목표입니다.
+    </p>
+  </section>
+
+</main>
+
 </body>
 </html>
